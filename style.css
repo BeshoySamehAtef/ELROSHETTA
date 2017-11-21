@@ -1,0 +1,697 @@
+body {
+    
+    width: 100%;
+    overflow-x: hidden;
+    font-family: myarabic;
+    
+}
+
+
+@font-face {
+    font-family:myarabic ;
+    src: url(TTF/flat-jooza-regular.ttf);
+}
+
+h2 {font-size: 30px;font-weight: 600; !importnat}
+
+p {
+    line-height: 1.5em;
+    font-size: 22px;
+    text-align:inherit;
+    font-family: myarabic;
+    color: dimgray;
+    
+     
+}
+
+
+a:hover {color: white}
+
+
+
+.navbar {
+    display: none ;
+}
+
+
+/*nav start*/
+
+.parent2 {
+  top:15px;
+  left:15px;
+  position:fixed;
+ display:block;
+  width:100px;
+  height:100px;
+  background-color:transparent;
+  border-radius:50%;
+  z-index:20;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.test1 {
+  width:60%;
+  height:60%;
+  background-color:rgb(65,188,72) ;
+  border-radius:50%;
+  position:absolute;
+  color:white;
+  text-align:center;
+  line-height:70px;
+    top:25%;
+  left:25%;
+  z-index:19;
+  transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    position:absolute;
+     
+}
+
+
+
+.test2 {
+  width:60%;
+  height:60%;
+  background-color:rgb(65,188,72);
+  border-radius:50%;
+  position:absolute;
+  color:white;
+  text-align:center;
+  line-height:70px;
+    top:25%;
+  left:25%;
+  z-index:19;
+  transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .2s;
+}
+.test3 {
+  width:60%;
+  height:60%;
+  background-color:rgb(65,188,72);
+  border-radius:50%;
+  position:absolute;
+  color:white;
+  text-align:center;
+  line-height:70px;
+    top:25%;
+  left:25%;
+    z-index:19;
+  transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .4s;  
+}
+  .test4 {
+  width:60%;
+  height:60%;
+  background-color:rgb(65,188,72);
+  border-radius:50%;
+  position:absolute;
+  color:white;
+  text-align:center;
+  line-height:70px;
+  top:25%;
+  left:25%;
+      z-index:19;
+  transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .6s;  
+}
+.mask2 {
+  top:15px;
+  left:15px;
+  width:100px;
+  height:100px;
+  background:rgb(33,150,243);
+  border-radius:50%;
+  position:absolute;
+  z-index:21;
+  color:white;
+  text-align:center;
+  line-height:120px;
+  cursor:pointer;
+  position:fixed;
+}
+
+
+
+
+
+
+
+.jumbotron {
+    height: 800px;
+    width: 100%;
+    background: #00c6ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.covermob {
+    position: relative;
+    max-height: 600px;
+    
+   /* animation:shakingcover 3s 0.5s both linear infinite alternate ;*/
+    
+}
+/*@keyframes shakingcover {
+     0%{ transform: rotate3d(0, 1, 0, 30deg) translateX(50px)}
+    50%{transform: rotate3d(0, 1, 0, 15deg) translateX(50px)}
+    100%{transform: rotate3d(0, 0, 0, 0deg) translateX(50px)}
+}*/
+
+
+
+/*.jumbotron {
+    height: 700px;
+    width: 100%;
+    background-image: url(images/19106066_469849833366862_1909279843857844435_n.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  
+}*/
+
+
+
+.leftCoverSide {
+width:80%;
+height: 400px;
+position:relative;
+/*border: 5px solid white;
+border-radius: 50px;*/
+text-transform:uppercase;
+text-align:center;
+letter-spacing: 1.6px;
+margin-top: 0px;
+    padding: 30px;
+    color: white;
+    
+    top: -400px;
+    left: 20%; 
+    
+
+     
+}
+
+.textCover {
+    transform-origin: 20px 20px;
+    animation: droping 0.7s ease both , swinging 0.7s 0.7s linear forwards ;
+}
+
+
+@keyframes droping {
+    0%{opacity: 0}
+    70%{transform: translateY(550px) rotateZ(40deg) }
+    100%{transform: translateY(500px) rotateZ(40deg);opacity: 1}
+}
+
+@keyframes swinging {
+    0%{transform: translateY(500px) rotateZ(40deg)}
+    50%{transform:translateY(500px) rotateZ(80deg)}
+    70%{transform:translateY(500px) rotateZ(100deg)}
+    80%{transform:translateY(500px) rotateZ(80deg)}
+    90%{transform:translateY(500px) rotateZ(40deg)}
+    100%{transform:translateY(500px) rotateZ(0deg)}
+}
+
+
+/*shine button*/
+
+
+
+
+
+
+
+
+/* buttom style and animation*/
+
+
+.download-btn {
+	display: inline;
+	height: 70px;
+	border-radius: 35px;
+	background: #d1d1d1;
+	overflow: hidden;
+	text-align: left;
+    
+}
+
+
+
+.download-btn:hover .btn-slide { width: 100%; }
+
+.ios-btn .btn-content,
+.download-btn-alt.ios-btn { color: #000; }
+
+.android-btn .btn-content,
+.download-btn-alt.android-btn { color: #669900; }
+
+.win-btn .btn-content,
+.download-btn-alt.win-btn { color: #68217a; }
+
+.download-btn .icon,
+.download-btn-alt .icon {
+	font-size: 32px;
+	position: absolute;
+	left: 20px;
+	top: 14px;
+    
+}
+
+.download-btn b,
+.download-btn-alt b {
+	display: block;
+	position: relative;
+	font-size: 20px;
+	font-weight: 700;
+	z-index: 2;
+}
+
+.download-btn-alt {
+	display: inline-block;
+	position: relative;
+	padding: 15px 30px 17px 70px;
+	background:#fff;
+	color:#00aeff;
+	border-radius:40px;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: left;
+	overflow: hidden;
+}
+
+.download-btn-alt .icon {
+	top: 17px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.download-btn-alt:hover .icon.fa.fa-android{
+	animation: pulse 1s both infinite ;
+	color:#00aeff;
+}
+
+.download-btn-alt:hover .icon.fa.fa-apple{
+	animation: pulse 1s both infinite ;
+	color:#00aeff;
+}
+
+
+
+
+
+
+
+
+a {
+	color: #444;
+	text-decoration: none;
+	-webkit-transition: all 0.25s ease-out;
+	-moz-transition: all 0.25s ease-out;
+	-ms-transition: all 0.25s ease-out;
+	-o-transition: all 0.25s ease-out;
+	transition: all 0.25s ease-out;
+}
+
+a:hover {
+	color: #00aeff;
+	text-decoration: none;
+}
+
+
+/*
+.hamada:before {
+content:"";
+background-color:  rgba(255,255,255,0.9);
+position:absolute;
+border-radius:1px;
+
+top:-50%;
+bottom:-11%;
+left:-150%;
+right:-5%;
+-webkit-transform:perspective(40em) rotateX(-45deg);
+transform:perspective(40em) rotateX(45deg);
+}
+
+.hamada a {
+z-index:999;
+position:relative;
+height: 85px;
+  display: block;
+  padding-top: 25px;
+}
+
+.hamada.sliding {
+     animation: animate-right22 2s 1s both ease-out ;
+}
+
+@keyframes animate-right22 {
+    0%{opacity: 0;transform: translate(-200px);}
+    50%{opacity: 0.5; transform: translate(250px)}
+    100%{opacity: 1; transform: translate(0px)}
+}
+*/
+
+.covermob{
+    
+   z-index: 50 !importnat;
+    display: block;
+    top: 15%;
+    left: 0%;
+    position:absolute;
+    animation: shake 1s 1.5s ;
+   
+}
+
+
+
+.contentBox {
+    width: 100%;
+    align-content: center;
+    
+    
+}
+
+.box { 
+    padding-top: 100px;
+    padding-bottom: 60px;
+    min-height: 650px;
+    position: relative;
+    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/*
+.box:nth-child(2) {background-color: green}
+.box:nth-child(3) {background-color: blue}
+.box:nth-child(1) {background-color: yellow}  */
+
+.row {
+    
+    margin:0px 4px 4px 4px;
+    display: block;
+    padding-bottom: 8px;
+    position: relative;
+    display: block;
+}
+
+
+
+
+
+
+
+.top-left,.center-left,.bottom-left{float: right ;clear: both; text-align: right;}
+
+
+
+
+/*animation*/
+
+/*left-side*/
+.top-left.in-view {
+    animation: animate-right1 2s 0.5s both ease-out ;
+}
+
+@keyframes animate-right1 {
+    0%{opacity: 0;transform: translate(-300px);}
+    100%{opacity: 1; transform: translate(0px)}
+}
+
+
+.center-left.in-view {
+    animation: animate-right2 2s 0.5s both ease-out ;
+}
+
+@keyframes animate-right2 {
+    0%{opacity: 0;transform: translate(-200px);}
+    100%{opacity: 1; transform: translate(0px)}
+}
+
+.bottom-left.in-view {
+    animation: animate-right3 2s 0.5s both ease-out ;
+}
+
+@keyframes animate-right3 {
+    0%{opacity: 0;transform: translate(-100px);}
+    100%{opacity: 1; transform: translate(0px)}
+}
+
+
+
+/*right-side*/
+.top-right.in-view {
+    animation: animate-left1 2s 0.5s both ease-out ;
+}
+
+@keyframes animate-left1 {
+    0%{opacity: 0;transform: translate(300px);}
+    100%{opacity: 1; transform: translate(0px)}
+}
+
+.center-right.in-view {
+    animation: animate-left2 2s 0.5s both ease-out ;
+}
+
+@keyframes animate-left2 {
+    0%{opacity: 0;transform: translate(200px);}
+    100%{opacity: 1; transform: translate(0px)}
+}
+
+
+.bottom-right.in-view {
+    animation: animate-left3 2s 0.5s both ease-out ;
+}
+
+@keyframes animate-left3 {
+    0%{opacity: 0;transform: translate(100px);}
+    100%{opacity: 1; transform: translate(0px)}
+}
+
+
+
+/*center*/
+
+.center-img.willAnimate.in-view {
+   /* height: 600px;*/
+   
+    transform-style: preserve-3d;
+   /* transform: translateX(50px);*/
+    animation: shaking 3s 0.5s both linear  ;
+    
+ 
+}
+
+@keyframes shaking {
+     0%{opacity: 0.6; transform: rotate3d(1, 1, 0, 30deg)}
+    50%{transform: rotate3d(1, 1, 0, 15deg) }
+    100%{transform: rotate3d(0, 0, 0, 0deg) }
+}
+
+/*.egraat {position: relative; margin: 70px; clear: both;}*/
+
+.dalel-co {
+    
+    text-align: right ;
+    position: relative;
+    
+    
+}
+
+.dalel-mob {
+    position: relative;
+    min-height: 400px;
+    
+}
+
+.dalel-co2 {
+    
+    text-align: left;
+    position: relative;
+    float: right;
+    
+    
+    
+}
+
+.dalel-mob2 {
+    position: relative;
+    min-height: 400px;
+    float: left;
+}
+
+.mobFront {
+   
+    transform: translate(150px);
+    position: absolute;
+    transform-style: preserve-3d;
+    z-index: 50;
+    
+   
+}
+.mobBack {
+    
+    transform: scale(0.9);
+    position: absolute;
+    z-index: 40;
+}
+
+.mobFront2 {
+   
+    transform: translate(0px);
+    position: absolute;
+    transform-style: preserve-3d;
+    
+   
+}
+.mobBack2 {
+    
+    transform: scale(0.9);
+    position: absolute;
+    z-index: -1;
+}
+
+
+.mobFront.willAnimate.in-view {
+    animation: animateFrontmob 2s 0.5s both ease-out ;
+    perspective: 1;
+    transform-style: preserve-3d;
+    
+}
+
+.mobFront2.willAnimate.in-view {
+    animation: animateFrontmob2 2s 0.5s both ease-out ;
+    perspective: 1;
+    transform-style: preserve-3d;
+    
+}
+
+@keyframes animateFrontmob {
+    0%{opacity: 0.5;transform: rotateY(45deg) translate(150px)}
+    100%{opacity: 1; transform: rotateY(0deg) translate(150px)}
+}
+
+@keyframes animateFrontmob2 {
+    0%{opacity: 0.5;transform: rotateY(45deg) translate(0px)}
+    100%{opacity: 1; transform: rotateY(0deg) translate(0px)}
+}
+
+
+.mobBack.willAnimate.in-view {
+    animation: animateBackmob 1.5s 1.5s both ease-out ;
+    perspective: 1;
+    transform-style: preserve-3d;
+    
+}
+
+.mobBack2.willAnimate.in-view {
+    animation: animateBackmob2 1.5s 1.5s both ease-out ;
+    perspective: 1;
+    transform-style: preserve-3d;
+    
+}
+
+@keyframes animateBackmob {
+    0%{opacity: 0;transform:  translate(150px) scale(0.9)}
+    100%{opacity: 1; transform:  translate(0px) scale(0.9)}
+}
+
+@keyframes animateBackmob2 {
+    0%{opacity: 0;transform:  translate(0px) scale(0.9)}
+    100%{opacity: 1; transform:  translate(150px) scale(0.9)}
+}
+
+
+.headerA.in-view {
+    animation: toLeft 2s both linear;
+}
+
+.headerA2.in-view {
+    animation: toLeft 2s both linear;
+}
+
+
+@keyframes toLeft {
+    0%{opacity: 0;transform:  translate(150px) }
+    100%{opacity: 1; transform:  translate(0px) }
+}
+
+.textA.in-view {
+    animation: downWards 2s 0.5s both linear;
+    padding: 50px;
+}
+
+.textA2.in-view {
+    animation: downWards 2s 0.5s both linear;
+    padding: 50px;
+}
+
+
+@keyframes downWards {
+    0%{opacity: 0;transform:  translateY(-150px) }
+    50%{opacity: 0; transform:  translateY(-80px) }
+    100%{opacity: 1; transform:  translateY(0px) }
+}
+
+
+.la2ta {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 2px;
+    width: 25%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+   /* border: 5px solid lightblue;*/
+    
+   box-shadow:  0px 0px 50px 0px rgba(0,0,0,0.5);
+    
+    
+}
+.la2ta:hover {
+    animation : bounceIn 1s 0.1s;
+}
+
+
+
+ .box:nth-child(even) {background-color: #F0F0F0;}
+
+
+
+ .videoo{width: 80%;margin: 0 auto;display:block}
+
+
+
+
+
+ @media screen and (max-width: 767px) {
+        body {height: auto;}
+     
+     .jumbotron {
+         height: 570px;
+     }
+     .leftCoverSide {
+         left: auto ;
+         padding: 0px;
+         margin-left: 20px;
+     }
+      .textCover h1 {
+        font-size: 50px;font-weight: 600; !importnat
+      }
+     
+     .covermob {display: none;}
+     
+     #ios {display: none;}
+     
+     .la2ta {
+         width: 200px;
+     }
+     
+      
+               
+    }
+
+
+
